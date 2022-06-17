@@ -55,6 +55,13 @@ Github   https://github.com/eepnt/tgbot_tradingit
             self.response = """
 谷女神: https://www.linkedin.com/in/erikaaggarwal/
             """
+        elif cmd == "/company_list":
+            self.response = """
+這群公司名單
+CS / BAML / GS / HSBC / MS / JPM / DB / Macquarie / SocGen
+Tetrion/ XY / Amber / Jane Street / Maven / BitMEX / BFAM / Auros / Akuna / Binance / 3AC / Yubo / Schonfeld
+Oracle / Amazon / Meta
+            """
     def new_member_join(self, name):
         self.response = """
 歡迎 {} 加入Trading IT,
