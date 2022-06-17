@@ -30,7 +30,7 @@ class tgmsg_digester():
                 if new_chat_member["is_bot"] == False:
                     self.new_member_join(new_chat_member["first_name"])
 
-        
+
     def command(self, cmd, content):
         if cmd == "/help":
             self.response = """
@@ -62,6 +62,9 @@ CS / BAML / GS / HSBC / MS / JPM / DB / Macquarie / SocGen
 Tetrion/ XY / Amber / Jane Street / Maven / BitMEX / BFAM / Auros / Akuna / Binance / 3AC / Yubo / Schonfeld
 Oracle / Amazon / Meta
             """
+        elif cmd == "/hi":
+            self.response = """hi {}""".format(content)
+
     def new_member_join(self, name):
         self.response = """
 歡迎 {} 加入Trading IT,
